@@ -1,0 +1,10 @@
+{
+  "name": "akhilesh-portfolio-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix ./akhilesh-portfolio",
+    "build": "npm run build --prefix ./akhilesh-portfolio",
+    "start": "npm run start --prefix ./akhilesh-portfolio",
+    "lint": "npm run lint --prefix ./akhilesh-portfolio"
+  }
+}
