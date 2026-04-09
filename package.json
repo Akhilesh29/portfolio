@@ -1,6 +1,9 @@
 {
   "name": "akhilesh-portfolio-root",
   "private": true,
+  "workspaces": [
+    "akhilesh-portfolio"
+  ],
   "scripts": {
     "dev": "npm run dev --prefix ./akhilesh-portfolio",
     "build": "npm run build --prefix ./akhilesh-portfolio",

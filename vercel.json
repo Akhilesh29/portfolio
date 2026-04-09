@@ -1,5 +1,0 @@
-{
-  "buildCommand": "npm run build --prefix ./akhilesh-portfolio",
-  "installCommand": "npm install --prefix ./akhilesh-portfolio",
-  "outputDirectory": "akhilesh-portfolio/.next"
-}
