@@ -22,7 +22,7 @@ export const projects: Project[] = [
     desc: "a distributed background task processing system written in go. it handles job scheduling, retries, and worker orchestration at scale.",
     tags: ["golang", "redis", "queues", "background-jobs"],
     github: "https://github.com/Akhilesh29/work-queue",
-    live: null,
+    live: "https://work-queue1.vercel.app/",
   },
   {
     slug: "ride-sharing-system-design",
