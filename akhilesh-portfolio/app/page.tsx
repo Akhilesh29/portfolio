@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { OrgLogo } from "./OrgLogo";
 
-/** From https://api.github.com/users/Akhilesh29 — update if you change GitHub username. */
+/** From https://api.github.com/users/Akhilesh29 */
 const GITHUB_AVATAR =
   "https://avatars.githubusercontent.com/u/98381403?v=4";
 
@@ -123,10 +123,12 @@ export default function Home() {
         <div className="section-label section-label-sentence">about</div>
         <div className="about-text">
           <p>
-            <span className="about-tldr">tldr;</span> learnt by hacking around
-            on the internet.
+            <span className="about-tldr">tldr;</span> i&apos;ve been building reliable and scalable software for around 2
+            years.
           </p>
-          <p>i build reliable and scalable software.</p>
+          <p>
+          learnt by hacking around on the internet.
+          </p>
           <p>I write code agentically. A lot of it.</p>
           <p className="about-projects-cta">
             <Link href="/projects" className="about-projects-link">

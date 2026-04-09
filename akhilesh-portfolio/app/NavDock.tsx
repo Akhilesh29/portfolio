@@ -27,25 +27,6 @@ function IconHome() {
   );
 }
 
-function IconBook() {
-  return (
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.75"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden
-    >
-      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-    </svg>
-  );
-}
-
 function IconGitHub() {
   return (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
@@ -92,7 +73,6 @@ function IconMail() {
 export function NavDock() {
   const pathname = usePathname();
   const homeActive = pathname === "/";
-  const projectsActive = pathname === "/projects" || pathname.startsWith("/projects/");
 
   return (
     <nav className="nav-dock" aria-label="Primary">
@@ -103,14 +83,6 @@ export function NavDock() {
         aria-current={homeActive ? "page" : undefined}
       >
         <IconHome />
-      </Link>
-      <Link
-        href="/projects"
-        className={`nav-dock-item${projectsActive ? " nav-dock-item-active" : ""}`}
-        aria-label="Projects"
-        aria-current={projectsActive ? "page" : undefined}
-      >
-        <IconBook />
       </Link>
       <a
         href={GITHUB}

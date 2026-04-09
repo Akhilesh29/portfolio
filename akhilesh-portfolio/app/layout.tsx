@@ -17,6 +17,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://akhilesh.dev"),
   title: "akhilesh",
   description: "software engineer building reliable systems.",
+  icons: {
+    icon: [{ url: "/icon.png", type: "image/png", sizes: "any" }],
+    apple: [{ url: "/icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/icon.png",
+  },
   openGraph: {
     title: "akhilesh",
     description: "software engineer building reliable systems.",
