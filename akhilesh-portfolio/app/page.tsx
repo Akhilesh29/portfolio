@@ -27,24 +27,36 @@ export const metadata: Metadata = {
 
 const workExperience: WorkEntry[] = [
   {
+    logoUrl:
+      "https://media.licdn.com/dms/image/v2/D560BAQFNcn9N7ZY0pw/company-logo_200_200/B56ZgxylgCHcAI-/0/1753182001616/urvann_logo?e=2147483647&v=beta&t=32HmMdA0egnm1pDyeBSwSwtRA3FjfkIp7LC_lO_PAxU",
+    localSrc: "/logos/urvann.png",
+    fallback: "ur",
+    logoDomain: "urvann.com",
+    company: "urvann",
+    url: "https://www.linkedin.com/company/urvann/",
+    role: "software engineer | full-time",
+    period: "may 2026 – present",
+    desc: "building urvann's growth automation system and maintaining the urvann genie 2.0 app.",
+  },
+  {
     localSrc: "/logos/dynasas-brand.png",
-    fallback: "Dy",
+    fallback: "dy",
     logoDomain: "dynasas.co",
-    company: "Dynasas",
+    company: "dynasas",
     url: "https://www.linkedin.com/company/dynasas-dynasoft-applied-systems/",
-    role: "Software Engineer | Full-time",
-    period: "Oct 2024 – present",
-    desc: "Led backend engineering team of 4. Built scalable backend systems and product infrastructure.",
+    role: "software engineer | full-time",
+    period: "nov 2024 – april 2026",
+    desc: "led backend engineering team of 4. built scalable backend systems and product infrastructure.",
   },
   {
     localSrc: "/logos/secureu-brand.png",
-    fallback: "Se",
+    fallback: "se",
     logoDomain: "secureu.in",
-    company: "Secureu",
+    company: "secureu",
     url: "https://www.linkedin.com/company/secureu/",
-    role: "Software Engineering Intern",
-    period: "Jul 2024 – Oct 2024",
-    desc: "Integral part of the backend and infra team, contributed to the core product features of Nebula.",
+    role: "software engineering intern",
+    period: "jul 2024 – oct 2024",
+    desc: "integral part of the backend and infra team, contributed to the core product features of nebula.",
   },
   {
     logoUrl:
@@ -52,11 +64,11 @@ const workExperience: WorkEntry[] = [
     localSrc: "/logos/open-source-global.svg",
     fallback: "os",
     logoDomain: "linkedin.com",
-    company: "Open Source",
+    company: "open source",
     url: "https://www.linkedin.com/company/open-source-projects-global/",
-    role: "Contributor",
-    period: "Jun 2023 – present",
-    desc: "Contributor with Open Source Projects Global. shipping fixes, docs, and features across community projects.",
+    role: "contributor",
+    period: "jun 2023 – present",
+    desc: "contributor with open source projects global. shipping fixes, docs, and features across community projects.",
   },
 ];
 
