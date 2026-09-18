@@ -9,6 +9,14 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "upi-split",
+    name: "upi-split",
+    desc: "split the bill. skip the mdr",
+    tags: ["next.js", "typescript", "upi", "qr"],
+    github: "https://github.com/Akhilesh29/upi-split",
+    live: "https://upi-split-three.vercel.app/",
+  },
+  {
     slug: "health-research-ai",
     name: "health research ai",
     desc: "a full-stack health intelligence system using llm-driven symptom interpretation, postgresql-backed session tracking, and geolocation-based provider discovery to deliver structured clinical guidance.",

@@ -36,7 +36,7 @@ const workExperience: WorkEntry[] = [
     url: "https://www.linkedin.com/company/urvann/",
     role: "software engineer | full-time",
     period: "may 2026 – present",
-    desc: "building urvann's growth automation system and maintaining the urvann genie 2.0 app.",
+    desc: "building the tech for one of the largest online plant delivery platform in india for over 1.5m+ users.",
   },
   {
     localSrc: "/logos/dynasas-brand.png",
@@ -75,29 +75,29 @@ const workExperience: WorkEntry[] = [
 const education = [
   {
     localSrc: "/logos/iiit-fav.png",
-    fallback: "II",
+    fallback: "ii",
     logoDomain: "iiitu.ac.in",
-    school: "Indian Institute of Information Technology, Una",
-    degree: "B.Tech · Electronics & Communication Engineering",
+    school: "indian institute of information technology, una",
+    degree: "b.tech · electronics & communication engineering",
     period: "2020 – 2024",
   },
 ];
 
 const skills = [
-  "TypeScript",
-  "Go",
-  "Python",
-  "C++",
-  "Next.js",
-  "Node.js",
-  "PostgreSQL",
-  "Docker",
-  "Redis",
-  "System Design",
-  "Distributed Systems",
-  "REST APIs",
-  "gRPC",
-  "Linux",
+  "typescript",
+  "go",
+  "python",
+  "c++",
+  "next.js",
+  "node.js",
+  "postgresql",
+  "docker",
+  "redis",
+  "system design",
+  "distributed systems",
+  "rest apis",
+  "grpc",
+  "linux",
 ];
 
 export default function Home() {
@@ -141,7 +141,7 @@ export default function Home() {
           <p>
           learnt by hacking around on the internet.
           </p>
-          <p>I write code agentically. A lot of it.</p>
+          <p>i write code agentically. a lot of it.</p>
           <p className="about-projects-cta">
             <Link href="/projects" className="about-projects-link">
               here are the projects i&apos;ve built.
