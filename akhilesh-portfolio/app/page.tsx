@@ -145,7 +145,11 @@ export default function Home() {
           <p className="about-projects-cta">
             <Link href="/projects" className="about-projects-link">
               here are the projects i&apos;ve built.
-      
+            </Link>
+          </p>
+          <p className="about-projects-cta">
+            <Link href="/blogs" className="about-projects-link">
+              blogs about engineering and life
             </Link>
           </p>
         </div>

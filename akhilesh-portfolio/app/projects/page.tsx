@@ -69,6 +69,11 @@ export default function ProjectsPage() {
           </div>
         ))}
         <p className="projects-more">more on the way..</p>
+        <p className="projects-more projects-more-link">
+          <Link href="/blogs" className="about-projects-link">
+            blogs about engineering and life
+          </Link>
+        </p>
       </div>
     </main>
   );
