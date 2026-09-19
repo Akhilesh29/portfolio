@@ -33,17 +33,43 @@ export default function StravaEngineeringPage() {
         <p className="blog-kicker">{stravaEngineering.date}</p>
         <h1 className="blog-title">{stravaEngineering.title}</h1>
         <p className="blog-lede">{stravaEngineering.lede}</p>
-        {stravaEngineering.blocks.map((block, i) =>
-          block.type === "h" ? (
-            <h2 key={i} className="blog-h">
-              {block.text}
-            </h2>
-          ) : (
-            <p key={i} className="blog-p">
-              {block.text}
-            </p>
-          )
-        )}
+        {stravaEngineering.blocks.map((block, i) => {
+          if (block.type === "h") {
+            return (
+              <h2 key={i} className="blog-h">
+                {block.text}
+              </h2>
+            );
+          }
+          if (block.type === "p") {
+            return (
+              <p key={i} className="blog-p">
+                {block.text}
+              </p>
+            );
+          }
+          if (block.type === "img") {
+            return (
+              <figure key={i} className="blog-figure">
+                <img src={block.src} alt={block.alt} />
+                <figcaption>{block.caption}</figcaption>
+              </figure>
+            );
+          }
+          return (
+            <div key={i} className="blog-figure-pair">
+              {block.items.map((item) => (
+                <figure key={item.src} className="blog-figure">
+                  <img src={item.src} alt={item.alt} />
+                  <figcaption>{item.caption}</figcaption>
+                </figure>
+              ))}
+            </div>
+          );
+        })}
+        <p className="blog-credits">
+          screenshots from wikimedia commons. not affiliated with strava.
+        </p>
       </article>
     </main>
   );

@@ -1,12 +1,27 @@
+export type BlogImage = {
+  src: string;
+  alt: string;
+  caption: string;
+};
+
 export type BlogBlock =
   | { type: "p"; text: string }
-  | { type: "h"; text: string };
+  | { type: "h"; text: string }
+  | { type: "img"; src: string; alt: string; caption: string }
+  | { type: "pair"; items: [BlogImage, BlogImage] };
 
 export const stravaEngineering = {
   title: "strava engineering",
   date: "sep 2026",
   lede: "the numbers on a strava activity look simple. 10.24 km. 5:12 /km. 87 m of elevation. behind each one is a noisy gps trace, a file parser, a smoothing pipeline, and a set of backend services that have to finish in a couple of seconds after you hit save. this is a walk through that machine, based on what strava has published in its engineering posts and help docs — not an official spec, just how the system actually behaves at scale.",
   blocks: [
+    {
+      type: "img",
+      src: "/blogs/strava/teide.jpg",
+      alt: "strava map of a volcano route with elevation chart",
+      caption:
+        "a gps route on satellite, with the elevation stream under it. this is the object the rest of the backend is trying to compute. photo: iain cameron, cc by 2.0.",
+    },
     {
       type: "h",
       text: "the phone is a bad instrument",
@@ -18,6 +33,23 @@ export const stravaEngineering = {
     {
       type: "p",
       text: "if you draw straight lines between those points you do not get the road. you get a drunk walk around the road. that walk is longer than the road. this is why two people on the same run can upload two different distances, and why a watch with a wheel or foot pod can disagree with the phone in your pocket. strava's whole activity pipeline exists to turn that drunk walk into something an athlete will trust.",
+    },
+    {
+      type: "pair",
+      items: [
+        {
+          src: "/blogs/strava/activity.jpg",
+          alt: "strava activity screen with gps route, distance, and segments",
+          caption:
+            "activity page: gps line, distance, pace, and segments. photo: snora2020, cc by-sa 4.0.",
+        },
+        {
+          src: "/blogs/strava/map.jpg",
+          alt: "strava map of a gps run with segment markers",
+          caption:
+            "the same run as a map. every orange mark is a segment other people already drew on this path. photo: snora2020, cc by-sa 4.0.",
+        },
+      ],
     },
     {
       type: "h",
@@ -84,12 +116,26 @@ export const stravaEngineering = {
       text: "grade-adjusted pace is the next layer for runs. a 5:00 /km up a 6% grade is not the same effort as 5:00 on the flat. strava rebuilt gap using the bulk stream lake — looking at how pace actually changes with gradient across a huge population, then applying that model to your elevation stream. gap is not measured. it is inferred from pace plus grade, and grade comes from the elevation pipeline below.",
     },
     {
+      type: "img",
+      src: "/blogs/strava/pace.png",
+      alt: "strava pace chart for a ridge walk",
+      caption:
+        "pace is not a single number. it is a stream. this chart is moving time over distance, after stops have been cut. photo: iain cameron, cc by 2.0.",
+    },
+    {
       type: "h",
       text: "gps, map matching, and the polyline",
     },
     {
       type: "p",
       text: "raw latlng is wgs84. maps are usually web mercator. somewhere in the pipeline the stream is projected, clipped, and encoded. the activity map you see is almost certainly a simplified polyline, often in google's encoded polyline format, not the full 1 hz trace. that is why zooming in on a city run still looks like a clean line on a street, while the underlying file is messier.",
+    },
+    {
+      type: "img",
+      src: "/blogs/strava/route.jpg",
+      alt: "strava timeline route drawn on a map",
+      caption:
+        "the polyline you see is a cleaned, simplified version of the 1 hz trace. photo: iain cameron, cc by 2.0.",
     },
     {
       type: "p",
@@ -106,6 +152,13 @@ export const stravaEngineering = {
     {
       type: "p",
       text: "gps altitude is the weakest number in the file. it is often off by tens of metres. if you sum the positive deltas of raw gps altitude, a flat 10 km run can show 200 m of climb. that is noise integrating into a fake mountain. strava does not want that number on the activity page.",
+    },
+    {
+      type: "img",
+      src: "/blogs/strava/elevation.png",
+      alt: "strava elevation profile for a ridge walk",
+      caption:
+        "elevation gain is the area under this curve after smoothing and a climb threshold. raw gps altitude would look much noisier. photo: iain cameron, cc by 2.0.",
     },
     {
       type: "p",

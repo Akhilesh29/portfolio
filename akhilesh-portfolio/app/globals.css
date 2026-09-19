@@ -647,6 +647,59 @@ body::before {
   margin-bottom: 14px;
 }
 
+.blog-figure {
+  margin: 28px 0;
+}
+
+.blog-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #111111;
+}
+
+.blog-figure figcaption {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--fg-dim);
+  line-height: 1.55;
+}
+
+.blog-figure-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 28px 0;
+}
+
+.blog-figure-pair .blog-figure {
+  margin: 0;
+}
+
+.blog-figure-pair img {
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.blog-credits {
+  margin-top: 40px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--fg-dim);
+  line-height: 1.6;
+}
+
+@media (max-width: 520px) {
+  .blog-figure-pair {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+}
+
 /* Skills */
 .skills-wrap {
   display: flex;
