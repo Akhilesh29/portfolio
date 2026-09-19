@@ -68,7 +68,7 @@ export default function StravaEngineeringPage() {
           );
         })}
         <p className="blog-credits">
-          screenshots from wikimedia commons. not affiliated with strava.
+          illustrative gps maps of new delhi — india gate, kartavya path, lodhi garden. not affiliated with strava.
         </p>
       </article>
     </main>

@@ -18,9 +18,9 @@ export const stravaEngineering = {
     {
       type: "img",
       src: "/blogs/strava/teide.jpg",
-      alt: "strava map of a volcano route with elevation chart",
+      alt: "gps map of a new delhi run around india gate with elevation chart",
       caption:
-        "a gps route on satellite, with the elevation stream under it. this is the object the rest of the backend is trying to compute. photo: iain cameron, cc by 2.0.",
+        "a delhi gps run over india gate and kartavya path, with the elevation stream under it. this is the object the rest of the backend is trying to compute. new delhi.",
     },
     {
       type: "h",
@@ -39,15 +39,15 @@ export const stravaEngineering = {
       items: [
         {
           src: "/blogs/strava/activity.jpg",
-          alt: "strava activity screen with gps route, distance, and segments",
+          alt: "activity screen of a new delhi run around india gate",
           caption:
-            "activity page: gps line, distance, pace, and segments. photo: snora2020, cc by-sa 4.0.",
+            "activity page for a morning run in new delhi: gps line, distance, pace. india gate loop.",
         },
         {
           src: "/blogs/strava/map.jpg",
-          alt: "strava map of a gps run with segment markers",
+          alt: "map of a gps run around india gate in new delhi",
           caption:
-            "the same run as a map. every orange mark is a segment other people already drew on this path. photo: snora2020, cc by-sa 4.0.",
+            "the same delhi run as a map. india gate in the centre, kartavya path stretching west.",
         },
       ],
     },
@@ -117,10 +117,10 @@ export const stravaEngineering = {
     },
     {
       type: "img",
-      src: "/blogs/strava/pace.png",
-      alt: "strava pace chart for a ridge walk",
+      src: "/blogs/strava/pace.jpg",
+      alt: "pace chart for a new delhi run",
       caption:
-        "pace is not a single number. it is a stream. this chart is moving time over distance, after stops have been cut. photo: iain cameron, cc by 2.0.",
+        "pace is not a single number. it is a stream. a delhi city run, moving time over distance, after stops have been cut.",
     },
     {
       type: "h",
@@ -133,9 +133,9 @@ export const stravaEngineering = {
     {
       type: "img",
       src: "/blogs/strava/route.jpg",
-      alt: "strava timeline route drawn on a map",
+      alt: "gps route looping lodhi garden in new delhi",
       caption:
-        "the polyline you see is a cleaned, simplified version of the 1 hz trace. photo: iain cameron, cc by 2.0.",
+        "a lodhi garden loop in new delhi. the polyline you see is a cleaned, simplified version of the 1 hz trace.",
     },
     {
       type: "p",
@@ -155,10 +155,10 @@ export const stravaEngineering = {
     },
     {
       type: "img",
-      src: "/blogs/strava/elevation.png",
-      alt: "strava elevation profile for a ridge walk",
+      src: "/blogs/strava/elevation.jpg",
+      alt: "elevation profile for a new delhi run",
       caption:
-        "elevation gain is the area under this curve after smoothing and a climb threshold. raw gps altitude would look much noisier. photo: iain cameron, cc by 2.0.",
+        "delhi is mostly flat. elevation gain is still estimated — smoothing plus a climb threshold — because raw gps altitude is noisy even here.",
     },
     {
       type: "p",
